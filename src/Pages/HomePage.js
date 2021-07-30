@@ -72,11 +72,11 @@ const fetchTickerHistory = ()=>{
         <div className="ticker_Grid_wrapper">
 
         <Grid container  >
-  <Grid container item xs={12} sm={6} md={5} lg={4}  className="ticker_section">
+  <Grid container item xs={12} sm={6} md={8} lg={10}  className="ticker_section">
     <AccordionCom ticker={tickers} />
 
   </Grid>
-  <Grid container item xs={12} sm={6} md={7} lg={8}  >
+  <Grid container item xs={12} sm={6} md={4} lg={2}  >
     <div style={{margin:"1em"}} >
   <SimpleSnackbar ref={childRef} />
 </div>
