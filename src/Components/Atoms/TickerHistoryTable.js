@@ -46,7 +46,7 @@ function stableSort(array, comparator) {
 const headCells = [
   { id: 'symbol', numeric: false, disablePadding: true, label: 'Symbol' },
   { id: 'open', numeric: true, disablePadding: true, label: 'Open' },
-  { id: 'Ltp', numeric: true, disablePadding: true, label: 'Last trade ' },
+  { id: 'Ltp', numeric: true, disablePadding: true, label: 'Last trade/price ' },
   { id: 'high', numeric: true, disablePadding: false, label: 'High' },
   { id: 'low', numeric: true, disablePadding: false, label: 'Low' },
   { id: 'Pl', numeric: true, disablePadding: false, label: 'Pre Close' },
