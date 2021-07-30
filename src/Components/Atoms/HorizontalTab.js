@@ -8,6 +8,10 @@ import './HorizontalTab.css';
 import InputField from './InputField';
 import SelectOpt from './SelectOpt';
 import EnhancedTable from './TickerHistoryTable';
+import { useSelector,useDispatch } from 'react-redux';
+import { searchFilterStockData } from '../../Redux/Ticker/tickerAction';
+
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -55,6 +59,17 @@ export default function HorizontalTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
+
+const dispatch = useDispatch();
+  const tickers = useSelector(state=>state.ticker);
+  console.log("the ticker is",tickers);
+
+
+const handleSearchTextChange = (e)=>{
+  e.preventDefault();
+    dispatch(searchFilterStockData(e.target.value));
+}
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -63,24 +78,26 @@ export default function HorizontalTabs() {
     <div className="tab_wrapper">
         <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
           <Tab label="Trading" {...a11yProps(0)} />
-          <Tab label="Derivatives" {...a11yProps(1)} />
-          <Tab label="Funding" {...a11yProps(2)} />
+          <Tab label="Top 5 Gainer" {...a11yProps(1)} />
+          <Tab label="Top 5 Looser" {...a11yProps(2)} />
         </Tabs>
       {/* </AppBar> */}
       <TabPanel value={value} index={0}>
        <header className="trading_tab_header">
-            <InputField type="text" />
-            <SelectOpt />
+            <InputField type="text" handleOnChange={handleSearchTextChange} value={tickers.searchTerm} />
+            {/* <SelectOpt /> */}
        </header>
        <section className="trading_tab_main_wrapper">
-    <EnhancedTable />
+    <EnhancedTable rows ={tickers.tickers} />
 </section>       
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+    <EnhancedTable rows ={tickers.stockGainer} />
+      
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+    <EnhancedTable rows ={tickers.stockLooser} />
+
       </TabPanel>
     </div>
   );

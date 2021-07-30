@@ -1,0 +1,502 @@
+[
+   {
+     "high": "783.75",
+     "low": "696.15",
+     "ltP": "773.55",
+     "open": "702.95",
+     "per": "10.04",
+     "previousClose": "703.00",
+     "ptsC": "70.55",
+     "symbol": "SUNPHARMA"
+   },
+   {
+     "high": "1,237.30",
+     "low": "1,175.00",
+     "ltP": "1,207.70",
+     "open": "1,185.00",
+     "per": "7.08",
+     "previousClose": "1,127.80",
+     "ptsC": "79.90",
+     "symbol": "TECHM"
+   },
+   {
+     "high": "929.90",
+     "low": "877.75",
+     "ltP": "920.55",
+     "open": "885.10",
+     "per": "4.24",
+     "previousClose": "883.10",
+     "ptsC": "37.45",
+     "symbol": "CIPLA"
+   },
+   {
+     "high": "687.80",
+     "low": "659.50",
+     "ltP": "675.00",
+     "open": "661.25",
+     "per": "2.33",
+     "previousClose": "659.65",
+     "ptsC": "15.35",
+     "symbol": "ADANIPORTS"
+   },
+   {
+     "high": "28,333.75",
+     "low": "27,583.15",
+     "ltP": "28,250.00",
+     "open": "27,661.00",
+     "per": "2.21",
+     "previousClose": "27,638.95",
+     "ptsC": "611.05",
+     "symbol": "SHREECEM"
+   },
+   {
+     "high": "173.20",
+     "low": "168.20",
+     "ltP": "171.00",
+     "open": "169.05",
+     "per": "2.15",
+     "previousClose": "167.40",
+     "ptsC": "3.60",
+     "symbol": "POWERGRID"
+   },
+   {
+     "high": "3,858.00",
+     "low": "3,753.15",
+     "ltP": "3,843.00",
+     "open": "3,776.00",
+     "per": "2.11",
+     "previousClose": "3,763.75",
+     "ptsC": "79.25",
+     "symbol": "BAJAJ-AUTO"
+   },
+   {
+     "high": "119.95",
+     "low": "116.25",
+     "ltP": "119.00",
+     "open": "116.95",
+     "per": "1.93",
+     "previousClose": "116.75",
+     "ptsC": "2.25",
+     "symbol": "NTPC"
+   },
+   {
+     "high": "760.00",
+     "low": "731.85",
+     "ltP": "744.75",
+     "open": "735.20",
+     "per": "1.82",
+     "previousClose": "731.45",
+     "ptsC": "13.30",
+     "symbol": "M&M"
+   },
+   {
+     "high": "1,049.95",
+     "low": "1,009.90",
+     "ltP": "1,022.30",
+     "open": "1,013.00",
+     "per": "1.46",
+     "previousClose": "1,007.60",
+     "ptsC": "14.70",
+     "symbol": "HCLTECH"
+   },
+   {
+     "high": "144.90",
+     "low": "141.25",
+     "ltP": "144.05",
+     "open": "142.30",
+     "per": "1.34",
+     "previousClose": "142.15",
+     "ptsC": "1.90",
+     "symbol": "COALINDIA"
+   },
+   {
+     "high": "2,464.70",
+     "low": "2,414.80",
+     "ltP": "2,442.55",
+     "open": "2,417.95",
+     "per": "1.15",
+     "previousClose": "2,414.80",
+     "ptsC": "27.75",
+     "symbol": "HDFC"
+   },
+   {
+     "high": "4,940.95",
+     "low": "4,862.25",
+     "ltP": "4,893.45",
+     "open": "4,879.95",
+     "per": "1.03",
+     "previousClose": "4,843.80",
+     "ptsC": "49.65",
+     "symbol": "DIVISLAB"
+   },
+   {
+     "high": "116.75",
+     "low": "113.80",
+     "ltP": "115.80",
+     "open": "114.30",
+     "per": "0.92",
+     "previousClose": "114.75",
+     "ptsC": "1.05",
+     "symbol": "ONGC"
+   },
+   {
+     "high": "1,669.90",
+     "low": "1,626.00",
+     "ltP": "1,656.70",
+     "open": "1,641.65",
+     "per": "0.92",
+     "previousClose": "1,641.65",
+     "ptsC": "15.05",
+     "symbol": "KOTAKBANK"
+   },
+   {
+     "high": "2,802.00",
+     "low": "2,745.70",
+     "ltP": "2,771.00",
+     "open": "2,764.00",
+     "per": "0.92",
+     "previousClose": "2,745.70",
+     "ptsC": "25.30",
+     "symbol": "HEROMOTOCO"
+   },
+   {
+     "high": "4,805.00",
+     "low": "4,677.60",
+     "ltP": "4,711.00",
+     "open": "4,685.00",
+     "per": "0.82",
+     "previousClose": "4,672.65",
+     "ptsC": "38.35",
+     "symbol": "DRREDDY"
+   },
+   {
+     "high": "1,566.00",
+     "low": "1,521.65",
+     "ltP": "1,555.85",
+     "open": "1,537.70",
+     "per": "0.73",
+     "previousClose": "1,544.60",
+     "ptsC": "11.25",
+     "symbol": "GRASIM"
+   },
+   {
+     "high": "3,440.00",
+     "low": "3,378.00",
+     "ltP": "3,425.05",
+     "open": "3,424.00",
+     "per": "0.57",
+     "previousClose": "3,405.60",
+     "ptsC": "19.45",
+     "symbol": "BRITANNIA"
+   },
+   {
+     "high": "762.00",
+     "low": "745.20",
+     "ltP": "755.00",
+     "open": "752.00",
+     "per": "0.51",
+     "previousClose": "751.20",
+     "ptsC": "3.80",
+     "symbol": "TATACONSUM"
+   },
+   {
+     "high": "300.00",
+     "low": "293.25",
+     "ltP": "294.40",
+     "open": "294.00",
+     "per": "0.51",
+     "previousClose": "292.90",
+     "ptsC": "1.50",
+     "symbol": "TATAMOTORS"
+   },
+   {
+     "high": "1,431.75",
+     "low": "1,407.95",
+     "ltP": "1,425.00",
+     "open": "1,419.00",
+     "per": "0.48",
+     "previousClose": "1,418.25",
+     "ptsC": "6.75",
+     "symbol": "HDFCBANK"
+   },
+   {
+     "high": "1,624.90",
+     "low": "1,585.00",
+     "ltP": "1,601.95",
+     "open": "1,598.00",
+     "per": "0.37",
+     "previousClose": "1,596.00",
+     "ptsC": "5.95",
+     "symbol": "LT"
+   },
+   {
+     "high": "672.00",
+     "low": "661.35",
+     "ltP": "664.70",
+     "open": "664.50",
+     "per": "0.31",
+     "previousClose": "662.65",
+     "ptsC": "2.05",
+     "symbol": "HDFCLIFE"
+   },
+   {
+     "high": "2,356.55",
+     "low": "2,318.00",
+     "ltP": "2,339.25",
+     "open": "2,340.00",
+     "per": "0.19",
+     "previousClose": "2,334.75",
+     "ptsC": "4.50",
+     "symbol": "HINDUNILVR"
+   },
+   {
+     "high": "2,563.70",
+     "low": "2,509.00",
+     "ltP": "2,531.40",
+     "open": "2,528.15",
+     "per": "0.13",
+     "previousClose": "2,528.15",
+     "ptsC": "3.25",
+     "symbol": "EICHERMOT"
+   },
+   {
+     "high": "7,095.00",
+     "low": "6,964.90",
+     "ltP": "6,994.00",
+     "open": "7,000.00",
+     "per": "0.01",
+     "previousClose": "6,993.50",
+     "ptsC": "0.50",
+     "symbol": "MARUTI"
+   },
+   {
+     "high": "1,623.40",
+     "low": "1,606.15",
+     "ltP": "1,611.75",
+     "open": "1,610.00",
+     "per": "-0.32",
+     "previousClose": "1,617.00",
+     "ptsC": "-5.25",
+     "symbol": "INFY"
+   },
+   {
+     "high": "568.50",
+     "low": "557.80",
+     "ltP": "564.75",
+     "open": "565.90",
+     "per": "-0.42",
+     "previousClose": "567.15",
+     "ptsC": "-2.40",
+     "symbol": "BHARTIARTL"
+   },
+   {
+     "high": "106.30",
+     "low": "102.90",
+     "ltP": "103.40",
+     "open": "104.25",
+     "per": "-0.48",
+     "previousClose": "103.90",
+     "ptsC": "-0.50",
+     "symbol": "IOC"
+   },
+   {
+     "high": "207.10",
+     "low": "204.60",
+     "ltP": "205.05",
+     "open": "206.10",
+     "per": "-0.49",
+     "previousClose": "206.05",
+     "ptsC": "-1.00",
+     "symbol": "ITC"
+   },
+   {
+     "high": "593.00",
+     "low": "585.00",
+     "ltP": "586.10",
+     "open": "588.85",
+     "per": "-0.74",
+     "previousClose": "590.45",
+     "ptsC": "-4.35",
+     "symbol": "WIPRO"
+   },
+   {
+     "high": "687.65",
+     "low": "678.00",
+     "ltP": "682.25",
+     "open": "687.00",
+     "per": "-0.76",
+     "previousClose": "687.50",
+     "ptsC": "-5.25",
+     "symbol": "ICICIBANK"
+   },
+   {
+     "high": "454.20",
+     "low": "444.90",
+     "ltP": "445.65",
+     "open": "449.20",
+     "per": "-0.77",
+     "previousClose": "449.10",
+     "ptsC": "-3.45",
+     "symbol": "BPCL"
+   },
+   {
+     "high": "2,067.95",
+     "low": "2,031.10",
+     "ltP": "2,037.00",
+     "open": "2,058.00",
+     "per": "-0.79",
+     "previousClose": "2,053.25",
+     "ptsC": "-16.25",
+     "symbol": "RELIANCE"
+   },
+   {
+     "high": "3,223.50",
+     "low": "3,162.35",
+     "ltP": "3,167.70",
+     "open": "3,219.00",
+     "per": "-0.88",
+     "previousClose": "3,195.80",
+     "ptsC": "-28.10",
+     "symbol": "TCS"
+   },
+   {
+     "high": "7,730.00",
+     "low": "7,592.00",
+     "ltP": "7,630.05",
+     "open": "7,719.80",
+     "per": "-0.91",
+     "previousClose": "7,700.45",
+     "ptsC": "-70.40",
+     "symbol": "ULTRACEMCO"
+   },
+   {
+     "high": "17,955.95",
+     "low": "17,655.05",
+     "ltP": "17,740.00",
+     "open": "17,914.75",
+     "per": "-0.98",
+     "previousClose": "17,914.75",
+     "ptsC": "-174.75",
+     "symbol": "NESTLEIND"
+   },
+   {
+     "high": "1,000.00",
+     "low": "980.00",
+     "ltP": "982.00",
+     "open": "989.00",
+     "per": "-1.01",
+     "previousClose": "992.05",
+     "ptsC": "-10.05",
+     "symbol": "INDUSINDBK"
+   },
+   {
+     "high": "1,747.90",
+     "low": "1,711.20",
+     "ltP": "1,721.00",
+     "open": "1,742.00",
+     "per": "-1.04",
+     "previousClose": "1,739.15",
+     "ptsC": "-18.15",
+     "symbol": "TITAN"
+   },
+   {
+     "high": "718.65",
+     "low": "707.15",
+     "ltP": "709.40",
+     "open": "718.05",
+     "per": "-1.09",
+     "previousClose": "717.25",
+     "ptsC": "-7.85",
+     "symbol": "AXISBANK"
+   },
+   {
+     "high": "3,008.65",
+     "low": "2,951.90",
+     "ltP": "2,955.90",
+     "open": "3,008.00",
+     "per": "-1.39",
+     "previousClose": "2,997.45",
+     "ptsC": "-41.55",
+     "symbol": "ASIANPAINT"
+   },
+   {
+     "high": "757.85",
+     "low": "733.55",
+     "ltP": "737.45",
+     "open": "746.15",
+     "per": "-1.46",
+     "previousClose": "748.40",
+     "ptsC": "-10.95",
+     "symbol": "JSWSTEEL"
+   },
+   {
+     "high": "1,123.00",
+     "low": "1,092.00",
+     "ltP": "1,111.05",
+     "open": "1,123.00",
+     "per": "-1.58",
+     "previousClose": "1,128.85",
+     "ptsC": "-17.80",
+     "symbol": "SBILIFE"
+   },
+   {
+     "high": "1,472.70",
+     "low": "1,427.80",
+     "ltP": "1,435.25",
+     "open": "1,455.65",
+     "per": "-1.60",
+     "previousClose": "1,458.60",
+     "ptsC": "-23.35",
+     "symbol": "TATASTEEL"
+   },
+   {
+     "high": "834.50",
+     "low": "786.15",
+     "ltP": "805.00",
+     "open": "821.25",
+     "per": "-1.79",
+     "previousClose": "819.70",
+     "ptsC": "-14.70",
+     "symbol": "UPL"
+   },
+   {
+     "high": "444.40",
+     "low": "430.70",
+     "ltP": "432.20",
+     "open": "441.50",
+     "per": "-2.12",
+     "previousClose": "441.55",
+     "ptsC": "-9.35",
+     "symbol": "SBIN"
+   },
+   {
+     "high": "459.65",
+     "low": "442.15",
+     "ltP": "447.80",
+     "open": "458.10",
+     "per": "-2.25",
+     "previousClose": "458.10",
+     "ptsC": "-10.30",
+     "symbol": "HINDALCO"
+   },
+   {
+     "high": "14,613.85",
+     "low": "14,161.00",
+     "ltP": "14,240.00",
+     "open": "14,605.00",
+     "per": "-2.46",
+     "previousClose": "14,599.05",
+     "ptsC": "-359.05",
+     "symbol": "BAJAJFINSV"
+   },
+   {
+     "high": "6,416.85",
+     "low": "6,212.20",
+     "ltP": "6,231.95",
+     "open": "6,416.85",
+     "per": "-2.63",
+     "previousClose": "6,400.10",
+     "ptsC": "-168.15",
+     "symbol": "BAJFINANCE"
+   }
+ ]

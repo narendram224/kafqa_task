@@ -3,29 +3,69 @@ import { useSelector, useDispatch } from 'react-redux'
 import AccordionCom from '../Components/Atoms/Accordion';
 import { Grid, Button } from '@material-ui/core';
 import SimpleSnackbar from '../Components/Atoms/Toster';
-import { WEB_SOCKET_BASE_URL } from '../Contant';
+import { fetchStock } from '../Redux/Ticker/tickerAction';
 
 const HomePage = () => {
 //  redux hooks for dispatch actions
   const dispatch = useDispatch();
   const childRef = useRef();
-//Socket  connection and joining method 
 
-const connectAndJoin = () => {
-  const host = WEB_SOCKET_BASE_URL;
-  dispatch(wsConnect(host,fetchTickerHistory));
-};
-  useEffect(() => {
-  connectAndJoin()
-  // unmount call
-    return ()=>{
-      dispatch(wsDisconnect())
-    }
-  })
 //  fetch the data from api
-  const fetchTickerHistory = ()=>{
-     dispatch(fetch_all_history('ticker'))
+
+ const  getData = async()=>{
+  const res = await fetch('./src/Pages/demo.json');
+  const data = await res.json();
+  return data;
+  // fetch("./demo.json").then(async response => {
+  //   try {
+  //    const data = await response.json()
+  //    console.log('response data?', data)
+  //  } catch(error) {
+  //    console.log('Error happened here!')
+  //    console.error(error)
+  //  }
+  // })
+}
+const getDataNew=()=>{
+  fetch('./assets/demo1.json'
+  ,{
+    headers : { 
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+     }
   }
+  )
+    .then(function(response){
+      console.log(response)
+      return response.json();
+    })
+    .then(function(myJson) {
+      console.log(myJson);
+    });
+}
+
+const fetchTickerHistory = ()=>{
+  dispatch(fetchStock())
+}
+  useEffect(() => {
+  // connectAndJoin()
+   getDataNew();
+
+  // const nwew = getData();
+  // console.log("the asdad",nwew);
+  // nwew.then((data)=>{
+  //   console.log("the data",data);
+    
+  // }).catch((e)=>{
+  //   console.log("the actual error",e);
+    
+  // })
+  
+  fetchTickerHistory();
+  // unmount call
+ 
+  },[])
+
 // State of ticker from stor
     const tickers = useSelector(state=>state.ticker);
     return (

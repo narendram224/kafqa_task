@@ -44,10 +44,15 @@ function stableSort(array, comparator) {
 }
 
 const headCells = [
-  { id: 'name', numeric: false, disablePadding: true, label: 'Name' },
-  { id: 'last', numeric: true, disablePadding: false, label: 'last' },
-  { id: 'hours', numeric: true, disablePadding: false, label: '24H' },
-  { id: 'vol', numeric: true, disablePadding: false, label: 'Vol USD' },
+  { id: 'symbol', numeric: false, disablePadding: true, label: 'Symbol' },
+  { id: 'open', numeric: true, disablePadding: true, label: 'Open' },
+  { id: 'Ltp', numeric: true, disablePadding: true, label: 'Last trade ' },
+  { id: 'high', numeric: true, disablePadding: false, label: 'High' },
+  { id: 'low', numeric: true, disablePadding: false, label: 'Low' },
+  { id: 'Pl', numeric: true, disablePadding: false, label: 'Pre Close' },
+  { id: 'ptsC', numeric: true, disablePadding: false, label: 'Change' },
+  { id: 'per', numeric: true, disablePadding: false, label: '% Change' },
+
 ];
 
 function EnhancedTableHead(props) {
@@ -117,7 +122,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function EnhancedTable() {
+export default function EnhancedTable({rows}) {
   const classes = useStyles();
   const [order, setOrder] = React.useState('asc');
   const [orderBy, setOrderBy] = React.useState('last');
@@ -125,10 +130,8 @@ export default function EnhancedTable() {
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
-  const tickers = useSelector(state=>state.ticker);
 
-let rows  = tickers.tickers;
-console.log("tickers Tasble Tickers is",tickers.tickers);
+
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
@@ -138,6 +141,7 @@ console.log("tickers Tasble Tickers is",tickers.tickers);
 
   
 
+  console.log("the row is",rows);
   
   const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 
@@ -162,7 +166,6 @@ console.log("tickers Tasble Tickers is",tickers.tickers);
               {stableSort(rows, getComparator(order, orderBy))
                 .map((row, index) => {
                   const labelId = `enhanced-table-checkbox-${index}`;
-
                   return (
                     <TableRow
                       hover
@@ -172,17 +175,25 @@ console.log("tickers Tasble Tickers is",tickers.tickers);
                     >
                      
                       <TableCell component="th" id={labelId} scope="row" padding="none">
-                        {row[10]}
+                        {row['symbol']}
                       </TableCell>
-                      <TableCell align="right">{row[6]}</TableCell>
-                      <TableCell align="right" className={Math.sign(row[5])===-1?"greenColor":"redColor"}>{row[5]}</TableCell>
-                      <TableCell align="right">{row[7]}</TableCell>
+                      <TableCell align="right">{row['open']}</TableCell>
+                      <TableCell align="right">{row['ltP']}</TableCell>
+                      <TableCell align="right">{row['high']}</TableCell>
+                      <TableCell align="right">{row['low']}</TableCell>
+                      <TableCell align="right">{row['previousClose']}</TableCell>
+                      <TableCell align="right">{row['ptsC']}</TableCell>
+                      <TableCell align="right">{row['per']}</TableCell>
+
+
+
+                      {/* <TableCell align="right" className={Math.sign(row[5])===-1?"greenColor":"redColor"}>{row[5]}</TableCell> */}
                     </TableRow>
                   );
                 })}
               {emptyRows > 0 && (
                 <TableRow style={{ height:  33  * emptyRows }}>
-                  <TableCell colSpan={6} />
+                  <TableCell colSpan={6} ></TableCell>
                 </TableRow>
               )}
             </TableBody>

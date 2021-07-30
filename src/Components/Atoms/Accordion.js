@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 
 const AccordionCom = ()=>{
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState(true);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);

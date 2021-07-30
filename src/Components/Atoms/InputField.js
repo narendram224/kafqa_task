@@ -1,10 +1,10 @@
 import React from 'react'
 import './InputField.css';
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
-const InputField = ({type,placeholder}) => {
+const InputField = ({type,placeholder,handleOnChange,value}) => {
     return (
         <div className="input_wrapper">
-        <input className="inputFieldStyle" type={type} placeholder={placeholder} />
+        <input className="inputFieldStyle" value={value} onChange={handleOnChange} type={type} placeholder={placeholder} />
             <SearchRoundedIcon className="input_icon" />
         </div>
     )
