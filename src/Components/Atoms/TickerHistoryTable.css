@@ -1,0 +1,53 @@
+.ticker_History_table{
+    margin-top: 12px;
+}
+.ticker_History_table .MuiTableCell-root{
+    line-height: 1;
+    border-bottom: none;
+    letter-spacing: 0;
+    color:white;
+}
+.ticker_History_table  .MuiButtonBase-root{
+    display:flex;
+
+}
+.ticker_History_table  .MuiButtonBase-root:hover{
+    border-bottom: none;
+    /* color: #273640; */
+    color: white;
+    
+}
+.ticker_History_table .MuiTableSortLabel-root .MuiTableSortLabel-icon{
+    color: var(--white);
+}
+.ticker_History_table .MuiTableSortLabel-root.MuiTableSortLabel-active{
+    color: var(--white);
+}
+.ticker_History_table .MuiTableSortLabel-root.MuiTableSortLabel-active.MuiTableSortLabel-root.MuiTableSortLabel-active .MuiTableSortLabel-icon{
+    color: var(--white);
+}
+
+  .MuiTableContainer-root::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .MuiTableContainer-root::-webkit-scrollbar-track {
+    background: var(--bg-color);
+
+  }
+  
+  .MuiTableContainer-root::-webkit-scrollbar-thumb {
+    background: #555;
+
+  }
+  
+  .MuiTableContainer-root::-webkit-scrollbar-thumb:hover {
+    background: #969b9e;
+  }
+  
+  .greenColor{
+    color: green !important;
+  }
+  .redColor{
+    color: red !important;
+  }

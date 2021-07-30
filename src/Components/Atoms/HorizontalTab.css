@@ -1,0 +1,46 @@
+
+.tab_wrapper{
+    flex-grow: 1;
+    box-sizing: border-box;
+    background-color:transparent;
+    width:100%;
+}
+.tab_wrapper .MuiTab-root{
+    min-width: 75px;
+    height: 30px;
+    min-height: 37px;
+    
+}
+.tab_wrapper .MuiTabs-root{
+    width: 80%;
+    min-height:28px;
+}
+.tab_wrapper .MuiButtonBase-root{
+    color: #ffffff;
+  display: inline;
+  font-size: 12px;
+  line-height: 18px;
+  font-stretch: extra-condensed;
+  padding:0;
+  margin:0 5px;
+    
+}
+.tab_wrapper .PrivateTabIndicator-colorSecondary-7{
+    background-color: green;
+    display:none;
+}
+.tab_wrapper .MuiButtonBase-root:hover{
+    border-bottom: 1px solid var(--grey-color);
+}
+.tab_wrapper .MuiTab-textColorInherit.Mui-selected{
+    border-bottom: 1px solid var(--white);
+
+}
+.tab_wrapper .MuiBox-root {
+    padding:9px 0 0 0;
+}
+.trading_tab_header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}

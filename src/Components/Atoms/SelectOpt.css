@@ -1,0 +1,27 @@
+.select_wrapper{
+
+}
+.select_main{
+    border: none;
+    background-color: #273640;
+    color: var(--white);
+    outline: none;
+    padding: 0;
+    font-size: 17px;
+    padding: 2px;
+    width: 120px;
+}
+
+.opt{
+    border: none;
+    outline: none;
+}
+
+/* select.decorated option:hover {
+    box-shadow: 0 0 10px 100px green inset;
+    background-color:green;
+}
+select option:hover {
+    box-shadow: 0 0 10px 100px #000 inset;
+    background-color:green;
+} */
