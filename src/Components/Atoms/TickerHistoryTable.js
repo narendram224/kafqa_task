@@ -141,8 +141,6 @@ export default function EnhancedTable({ rows, emptyRow }) {
         setOrder(isAsc ? 'desc' : 'asc')
         setOrderBy(property)
     }
-    console.log('ini t data', rows, emptyRow)
-
     return (
         <div className="ticker_History_table">
             <TableContainer className={classes.container}>
