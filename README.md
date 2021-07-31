@@ -2,6 +2,8 @@
 
 This project is basically a widgets called tickers which shows the Data of NSE(nifty 50) stock excange .
 
+[Live Demo of Webapp](https://kafqa-pse62bnqn-narendram224nm.vercel.app/)
+
 ##Tools & Technologies
 
 | Tools  | Version |
