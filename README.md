@@ -32,6 +32,12 @@ In the project directory, you can run:
   
   There is only one page in the project and having more then 10 isolated component.
  # Here is the some of the screenshot
+ ## State 1: 
+ While loading the data of the table you will see a loader in the table body.
+ and also see a toaster notification with message in the bottom left corner
+ ![upload6_L](https://user-images.githubusercontent.com/35723915/127731851-614f8724-a43f-4e37-badf-00e24dc20db5.jpg)
+## State 2: 
+ After successfully fetch the data you will get the following screen.
 ![upload2](https://user-images.githubusercontent.com/35723915/127682432-e89220a7-5250-4877-a587-73814f2e3298.jpg)
   
   ## description of every atrributes of the table
@@ -75,7 +81,11 @@ In the project directory, you can run:
   
   For clear filter
   I have to remote all teh typed characters from input field.
-  
+ 
+ ## When the data not found you will get the table showing the text no data found 
+ ![upload7_N](https://user-images.githubusercontent.com/35723915/127731943-322aef80-0518-40e9-a132-9ddeb800a0e2.jpg)
+
+  checkout the above screenshot how the text look like whne data not found of the search filter.
 ### `npm start`
 
 Runs the app in the development mode.\
