@@ -28,18 +28,18 @@ const HomePage = () => {
                     container
                     item
                     xs={12}
-                    sm={6}
-                    md={8}
-                    lg={10}
+                    sm={12}
+                    md={12}
+                    lg={12}
                     className="ticker_section"
                 >
                     <AccordionCom ticker={tickers} />
                 </Grid>
-                <Grid container item xs={12} sm={6} md={4} lg={2}>
-                    <div style={{ margin: '1em' }}>
-                        <SimpleSnackbar ref={childRef} />
-                    </div>
-                </Grid>
+                {/* <Grid container item xs={12} sm={6} md={4} lg={2}> */}
+                <div style={{ margin: '1em' }}>
+                    <SimpleSnackbar ref={childRef} />
+                </div>
+                {/* </Grid> */}
             </Grid>
         </div>
     )
