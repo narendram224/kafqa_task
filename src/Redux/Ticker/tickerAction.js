@@ -4,7 +4,6 @@ import {
     FETCH_STOCK_FAILURE,
     FILTER_STOCK_DATA,
 } from './tickerType'
-import { BASE_URL } from '../../Constants/Constant'
 const fetchStockRequest = () => {
     return {
         type: FETCH_STOCK_REQUEST,
@@ -23,15 +22,14 @@ const fetchStockFailure = (error) => {
         payload: error,
     }
 }
+// input search field data handler
 export const searchFilterStockData = (filter_text) => {
     return { type: FILTER_STOCK_DATA, payload: filter_text }
 }
 
-export const fetchStock = (notify) => {
-    let myHeaders = new Headers()
-    myHeaders.append('Access-Control-Allow-Origin', '*')
-    // myHeaders.append('Content-Type', 'application/json');
+// Api call code for fetch all Stock Fetch
 
+export const fetchStock = (notify) => {
     return (dispatch) => {
         dispatch(fetchStockRequest())
         notify.current.openToaster('Loading the stock data')
@@ -52,5 +50,3 @@ export const fetchStock = (notify) => {
             })
     }
 }
-
-// Api call code for fetch all tickers

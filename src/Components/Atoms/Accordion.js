@@ -31,11 +31,8 @@ const AccordionCom = () => {
     const [expanded, setExpanded] = React.useState('panel1')
 
     const handleChange = (panel) => (event, isExpanded) => {
-        console.log('the palen Data', panel)
-
         setExpanded(isExpanded ? panel : false)
     }
-    console.log('expanded Data', expanded)
 
     return (
         <div className={'Ticker_Wrapper'}>

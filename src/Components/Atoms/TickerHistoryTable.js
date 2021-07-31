@@ -45,7 +45,7 @@ const headCells = [
         id: 'Ltp',
         numeric: true,
         disablePadding: true,
-        label: 'Last trade/price ',
+        label: 'Price/Last trade ',
     },
     { id: 'high', numeric: true, disablePadding: false, label: 'High' },
     { id: 'low', numeric: true, disablePadding: false, label: 'Low' },
@@ -141,8 +141,7 @@ export default function EnhancedTable({ rows, emptyRow }) {
         setOrder(isAsc ? 'desc' : 'asc')
         setOrderBy(property)
     }
-
-    console.log('the row is', rows[0])
+    console.log('ini t data', rows, emptyRow)
 
     return (
         <div className="ticker_History_table">
@@ -162,81 +161,96 @@ export default function EnhancedTable({ rows, emptyRow }) {
                         rowCount={rows.length}
                     />
                     <TableBody>
-                        {stableSort(rows, getComparator(order, orderBy)).map(
-                            (row, index) => {
-                                const labelId = `enhanced-table-checkbox-${index}`
-                                return (
-                                    <TableRow
-                                        hover
-                                        role="checkbox"
-                                        tabIndex={-1}
-                                        key={`Row${index}_${row[1]}`}
-                                    >
-                                        <TableCell
-                                            component="th"
-                                            id={labelId}
-                                            scope="row"
-                                            padding="none"
+                        {rows.length > 0 && emptyRow ? (
+                            stableSort(rows, getComparator(order, orderBy)).map(
+                                (row, index) => {
+                                    const labelId = `enhanced-table-checkbox-${index}`
+                                    return (
+                                        <TableRow
+                                            hover
+                                            role="checkbox"
+                                            tabIndex={-1}
+                                            key={`Row${index}_${row[1]}`}
                                         >
-                                            {row['symbol']}
-                                        </TableCell>
-                                        <TableCell align="right">
-                                            {row['open']}
-                                        </TableCell>
-                                        <TableCell align="right">
-                                            {row['ltP']}
-                                        </TableCell>
-                                        <TableCell align="right">
-                                            {row['high']}
-                                        </TableCell>
-                                        <TableCell align="right">
-                                            {row['low']}
-                                        </TableCell>
-                                        <TableCell align="right">
-                                            {row['previousClose']}
-                                        </TableCell>
-                                        <TableCell
-                                            align="right"
-                                            className={
-                                                Math.sign(row['ptsC']) === -1
-                                                    ? 'redColor'
-                                                    : 'greenColor'
-                                            }
-                                        >
-                                            {row['ptsC']}
-                                        </TableCell>
-                                        <TableCell
-                                            align="right"
-                                            className={
-                                                Math.sign(row['per']) === -1
-                                                    ? 'redColor'
-                                                    : 'greenColor'
-                                            }
-                                        >
-                                            {row['per']}
-                                        </TableCell>
+                                            <TableCell
+                                                component="th"
+                                                id={labelId}
+                                                scope="row"
+                                                padding="none"
+                                            >
+                                                {row['symbol']}
+                                            </TableCell>
+                                            <TableCell align="right">
+                                                {row['open']}
+                                            </TableCell>
+                                            <TableCell align="right">
+                                                {row['ltP']}
+                                            </TableCell>
+                                            <TableCell align="right">
+                                                {row['high']}
+                                            </TableCell>
+                                            <TableCell align="right">
+                                                {row['low']}
+                                            </TableCell>
+                                            <TableCell align="right">
+                                                {row['previousClose']}
+                                            </TableCell>
+                                            <TableCell
+                                                align="right"
+                                                className={
+                                                    Math.sign(row['ptsC']) ===
+                                                    -1
+                                                        ? 'redColor'
+                                                        : 'greenColor'
+                                                }
+                                            >
+                                                {row['ptsC']}
+                                            </TableCell>
+                                            <TableCell
+                                                align="right"
+                                                className={
+                                                    Math.sign(row['per']) === -1
+                                                        ? 'redColor'
+                                                        : 'greenColor'
+                                                }
+                                            >
+                                                {row['per']}
+                                            </TableCell>
 
-                                        {/* <TableCell align="right" className={Math.sign(row[5])===-1?"greenColor":"redColor"}>{row[5]}</TableCell> */}
-                                    </TableRow>
-                                )
-                            }
-                        )}
-                        {!emptyRow && (
+                                            {/* <TableCell align="right" className={Math.sign(row[5])===-1?"greenColor":"redColor"}>{row[5]}</TableCell> */}
+                                        </TableRow>
+                                    )
+                                }
+                            )
+                        ) : (
                             <TableRow style={{ height: '33%' }}>
-                                <TableCell colSpan={2}>
-                                    <SkeltonItem />
-                                </TableCell>
-                                <TableCell colSpan={2}>
-                                    <SkeltonItem />
-                                </TableCell>
-                                <TableCell colSpan={2}>
-                                    <SkeltonItem />
-                                </TableCell>
-                                <TableCell colSpan={2}>
-                                    <SkeltonItem />
-                                </TableCell>
+                                {!emptyRow ? (
+                                    <>
+                                        <TableCell colSpan={2}>
+                                            <SkeltonItem />
+                                        </TableCell>
+                                        <TableCell colSpan={2}>
+                                            <SkeltonItem />
+                                        </TableCell>
+                                        <TableCell colSpan={2}>
+                                            <SkeltonItem />
+                                        </TableCell>
+                                        <TableCell colSpan={2}>
+                                            <SkeltonItem />
+                                        </TableCell>
+                                    </>
+                                ) : (
+                                    <TableCell colSpan={8}>
+                                        <p className="title">No Data Match</p>
+                                    </TableCell>
+                                )}
                             </TableRow>
                         )}
+                        {/* {!emptyRow && rows.length === 0 && (
+                            <TableRow style={{ height: '33%' }}>
+                              
+                            </TableRow>
+                        )} */}
                     </TableBody>
                 </Table>
             </TableContainer>

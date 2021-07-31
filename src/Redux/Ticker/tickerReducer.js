@@ -27,8 +27,8 @@ const tickerReducer = produce((draft = INITIAL_STATE, action) => {
             return draft
         case FETCH_STOCK_SUCCESS:
             if (Array.isArray(action.payload) && action.payload.length > 0) {
-                // draft.tickers = action.payload
-                // draft.stockLoaded = true
+                draft.tickers = action.payload
+                draft.stockLoaded = true
                 draft.tempStockArray = action.payload
                 draft.stockGainer = calculateProfit(action.payload)
                 draft.stockLooser = calculateLoosers(action.payload)
@@ -50,8 +50,6 @@ const tickerReducer = produce((draft = INITIAL_STATE, action) => {
                           .includes(action.payload.toLowerCase())
                   )
                 : draft.tempStockArray
-            console.log('filtered', filteredArray)
-
             draft.tickers = filteredArray
             return draft
         default:

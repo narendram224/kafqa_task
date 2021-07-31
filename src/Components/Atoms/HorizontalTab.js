@@ -50,7 +50,6 @@ export default function HorizontalTabs() {
 
     const dispatch = useDispatch() // hook which provide dispatch
     const tickers = useSelector((state) => state.ticker) // hook which provide the store state
-    console.log('the ticker is', tickers)
 
     // dispatch action of when input fields values changed
     const handleSearchTextChange = (e) => {
